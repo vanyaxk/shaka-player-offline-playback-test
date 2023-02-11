@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/shaka-player/dist/controls.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaka player Offline Playback</title>
+  </head>
+  <body>
+    <span id="online-indicator"></span>
+    <div class="main-panel">
+      <div class="downloaded-content">
+        <h2>Downloaded content:</h2>
+        <ul id="downloaded-content"></ul>
+      </div>
+      <div id="container">
+        <video autoplay id="video" width="1920" height="1080"></video>
+      </div>
+    </div>
+    <div class="download-panel">
+      <progress min="0" max="100" value="0" id="download-progress"></progress>
+      <button id="download-button" type="button">Download Asset</button>
+    </div>
+
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>
